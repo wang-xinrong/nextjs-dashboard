@@ -19,13 +19,7 @@ export default function EditInvoiceForm({
   customers: CustomerField[];
 }) {
   const updateInvoiceWithId = updateInvoice.bind(null, invoice.id);
- 
-//   return (
-//     <form action={updateInvoiceWithId}>
-//       <input type="hidden" name="id" value={invoice.id} />
-//     </form>
-//   )
-// };
+
   return (
     <form action={updateInvoiceWithId}>
       <div className="rounded-md bg-gray-50 p-4 md:p-6">
